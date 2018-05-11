@@ -5,7 +5,6 @@ import { createStore } from 'redux';
 import { Provider} from 'react-redux';
 import counter from './reducers';
 import App from './components/App';
-// import CounterContainer from './containers/CounterContainer';
 
 import registerServiceWorker from './registerServiceWorker';
 
