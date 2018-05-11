@@ -1,18 +1,20 @@
-import connect from 'react-redux';
-import { increment, decrement } from '../actions';
-import Numbers from '../components/Numbers';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Display from '../components/Display';
 
-const CounterContainer = () => {
-  return(
-    <Numbers />
-  )
-}
-const mapStateToProps = state  => {
+
+function mapStateToProps(state){
   return {
     value: state.count
   }
 }
 
-export default connect(
-  mapStateToProps
-)(Numbers);
+function mapDispatchToProps(dispatch){
+  return{
+    onIncreaseClick: () => dispatch({type:'increment'}),
+    onDecreaseClick: () => dispatch({type: 'decrement'})
+  }
+}
+const CounterContainer = connect(mapStateToProps, mapDispatchToProps)(Display);
+
+export default CounterContainer;
