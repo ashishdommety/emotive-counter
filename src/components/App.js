@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-import Buttons from './Buttons';
-import Numbers from './Numbers';
+import { connect } from 'react-redux';
+import Display from './Display';
 // import '../containers/counterContainer';
 import './App.css';
 
-const App = (props) => {
-  console.log(props.store.getState());
-  return(
-  <div>
-    <Buttons store={props.store}/>
-    <Numbers count={props.store.getState().count} />
-  </div>
-  )
+function mapStateToProps(state){
+  return {
+    value: state.count
+  }
 }
+
+function mapDispatchToProps(dispatch){
+  return{
+    onIncreaseClick: () => dispatch({type:'increment'}),
+    onDecreaseClick: () => dispatch({type: 'decrement'})
+  }
+}
+const App = connect(mapStateToProps, mapDispatchToProps)(Display);
 
 export default App;

@@ -3,7 +3,6 @@ function counter(state = { count : 0 }, action){
   console.log(count);
   switch(action.type){
     case 'increment':
-      
       return { count: count + 1 };
     case 'decrement':
       return { count: count - 1 };

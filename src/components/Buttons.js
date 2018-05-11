@@ -6,19 +6,16 @@ class Buttons extends Component {
   constructor(props){
     super(props);
   }
-  increaseNum = () => {
-    // store.dispatch(increment);
-    // console.log(this.props.store);
-    this.props.store.dispatch({type:'increment'});
-  }
 
   render(){
     return(
       <div>
         <button
-          onClick={()=>this.increaseNum()} 
+          onClick={this.props.increase}
         >+</button>
-        <button>-</button>
+        <button
+          onClick={this.props.decrease}  
+        >-</button>
       </div>
     )
   }

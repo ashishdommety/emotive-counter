@@ -16,3 +16,7 @@ This reaches the reducer.
 1. Passing the store down from the root component, and using it that way. 
 2. How do I use mapStateToProps and mapDispatchToProps?
 3. How do I incorporate container components?
+
+## ❗️ 💡 Update! 
+
+It works!
