@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Display from '../components/Display';
 
-
 function mapStateToProps(state){
   return {
     value: state.count
