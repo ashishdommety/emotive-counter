@@ -17,6 +17,12 @@ This reaches the reducer.
 2. How do I use mapStateToProps and mapDispatchToProps?
 3. How do I incorporate container components?
 
-## ❗️ 💡 Update! 
+# ❗️ 💡 👽 Update! 
 
 It works!
+
+## What I did?
+1. Added all the redux stuff in App.js, and removed any notice of the components. In this case, App.js is the container component.
+2. I then added another component called 'Display' that's purpose is to put the button and numbers components into one, while passing down the needed state and behaviour.
+3. The presentational components then, essentially, can be functional because they have no state. They just have props. 
+4. There is thus no local state, but one global state.
