@@ -6,11 +6,11 @@ import Numbers from './Numbers';
 import './App.css';
 
 const App = (props) => {
-  // console.log(props.store);
+  console.log(props.store.getState());
   return(
   <div>
     <Buttons store={props.store}/>
-    <Numbers count={0} />
+    <Numbers count={props.store.getState().count} />
   </div>
   )
 }
