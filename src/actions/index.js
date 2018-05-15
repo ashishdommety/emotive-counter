@@ -1,9 +1,8 @@
-const increment = () => {
+export const increment = {
   type: 'increment'
 }
 
-const decrement = () => {
+export const decrement = {
   type: 'decrement'
 }
 
-export default { increment, decrement };

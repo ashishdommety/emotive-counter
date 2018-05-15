@@ -13,8 +13,8 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
   return{
-    onIncreaseClick: () => dispatch({type:'increment'}),
-    onDecreaseClick: () => dispatch({type: 'decrement'})
+    onIncreaseClick: () => dispatch(increment),
+    onDecreaseClick: () => dispatch(decrement)
   }
 }
 const CounterContainer = connect(mapStateToProps, mapDispatchToProps)(Display);
