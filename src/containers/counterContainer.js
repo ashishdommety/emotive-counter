@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Display from '../components/Display';
-import { increment, decrement } from '../actions/index'; // need to figure out how to export the actions in so they can be used here
+import Emotions from '../reducers/index';
+import { increment, decrement } from '../actions/index'; 
 
-// console.log(increment);
-
+// console.log(emotions);
 function mapStateToProps(state){
   return {
-    value: state.count
+    value: state.count,
+    feelings: state.emotions
   }
 }
 

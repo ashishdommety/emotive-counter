@@ -1,11 +1,14 @@
-function counter(state = { count : 0 }, action){
+import Emotions from '../data/Emotions';
+
+function counter(state = { count : 0, emotions: Emotions }, action){
   const count = state.count;
-  console.log(count);
+
+  // console.log(emotions);
   switch(action.type){
     case 'increment':
-      return { count: count + 1 };
+      return { count: count + 1, emotions: Emotions };
     case 'decrement':
-      return { count: count - 1 };
+      return { count: count - 1, emotions: Emotions };
     default:
       return state;
   }
