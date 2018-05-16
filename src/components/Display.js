@@ -5,7 +5,7 @@ import Numbers from './Numbers';
 const Display = (props) => {
     return(
     <div>
-      <Buttons increase={props.onIncreaseClick} decrease={props.onDecreaseClick}/>
+      <Buttons poke={props.pokeThing}/>
       <Numbers count={props.value} emotions={props.feelings}/>
     </div>
     )

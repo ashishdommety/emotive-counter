@@ -1,8 +1,4 @@
-export const increment = {
-  type: 'increment'
-}
-
-export const decrement = {
-  type: 'decrement'
+export const poke = {
+  type: 'poke'
 }
 

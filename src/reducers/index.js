@@ -5,10 +5,8 @@ function counter(state = { count : 0, emotions: Emotions }, action){
 
   // console.log(emotions);
   switch(action.type){
-    case 'increment':
+    case 'poke':
       return { count: count + 1, emotions: Emotions };
-    case 'decrement':
-      return { count: count - 1, emotions: Emotions };
     default:
       return state;
   }

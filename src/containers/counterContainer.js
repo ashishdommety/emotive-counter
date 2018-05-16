@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Display from '../components/Display';
 import Emotions from '../reducers/index';
-import { increment, decrement } from '../actions/index'; 
+import { poke } from '../actions/index'; 
 
 // console.log(emotions);
 function mapStateToProps(state){
@@ -14,8 +14,7 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
   return{
-    onIncreaseClick: () => dispatch(increment),
-    onDecreaseClick: () => dispatch(decrement)
+    pokeThing: () => dispatch(poke)
   }
 }
 const CounterContainer = connect(mapStateToProps, mapDispatchToProps)(Display);
