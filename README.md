@@ -1,25 +1,24 @@
-# Attempt at redux stuff
+# A Simple React Redux Example:
 
-## What I'm doing now:-
-I've create a:
-+ reducer
-+ action
-+ store
+## Thinking about the application
 
-I'm then passing the store all the way down from the top to the components I want it to be in, and then am dispatching an action from there.
-This reaches the reducer.
+## Understanding each file
 
-## What isn't working:-
-1. Once it reaches the reducer, the changes are happening on the global state, but aren't reflecting on the DOM
+### Index.js
+About create store, etc
 
-## What I don't like / Questions:-
-1. Passing the store down from the root component, and using it that way. 
-2. How do I use mapStateToProps and mapDispatchToProps?
-3. How do I incorporate container components?
+### Components
+About simplicity of components and how state and behaviour is established
 
-# ❗️ 💡 👽 Update! 
+### Reducers
+About pure function used to manipulate state
 
-It works!
+### Actions
+About the actions (action) and what 
+
+### Containers
+About container component, mapStateToProps, etc
+
 
 ## What I did?
 1. Added all the redux stuff in App.js, and removed any notice of the components. In this case, App.js is the container component.
