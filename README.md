@@ -1,6 +1,7 @@
 # A Simple React Redux Example:
-
+What the example is
 ## Thinking about the application
+Thinking about isolating behaviour, containers, ideal component structure, etc.
 
 ## Understanding each file
 
