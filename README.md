@@ -1,5 +1,6 @@
 # A Simple React Redux Example:
 What the example is
+
 ## Thinking about the application
 Thinking about isolating behaviour, containers, ideal component structure, etc.
 
@@ -19,7 +20,6 @@ About the actions (action) and what
 
 ### Containers
 About container component, mapStateToProps, etc
-
 
 ## What I did?
 1. Added all the redux stuff in App.js, and removed any notice of the components. In this case, App.js is the container component.
