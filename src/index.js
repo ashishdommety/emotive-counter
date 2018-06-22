@@ -1,19 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { createStore, applyMiddleware } from 'redux'; // import applyMiddleware from redux
+import store from './store';
 import axios from 'axios';
-import logger from 'redux-logger';
-import thunk from 'redux-thunk';
 import { Provider} from 'react-redux';
-import counter from './reducers';
 import App from './components/App';
 
 import registerServiceWorker from './registerServiceWorker';
-
-const middleware = applyMiddleware(logger, thunk); // create a middleware const that uses applyMiddleware
-
-const store = createStore(counter, middleware); // add middleware as an argument to the store.
 
 // dispatch these actions on page load (making async happen with redux)
 store.dispatch((dispatch) =>{
