@@ -7,8 +7,8 @@ export const start = function start(){
   return { type: 'start' }
 }
 
-export const happening = function happening(){
-  return { type: 'happening' }
+export const broken = function broken(){
+  return { type: 'broken' }
 }
 
 export const end = function end(){
