@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Display from '../components/Display';
-import Emotions from '../reducers/index';
 import { poke } from '../actions/index'; 
 
 function mapStateToProps(state){
