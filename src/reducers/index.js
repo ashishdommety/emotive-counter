@@ -1,6 +1,13 @@
 import Emotions from '../data/Emotions';
 
-function counter(state = { count: 0, emotions: Emotions, message: 'apple-untouched' }, action){
+// intial state goes here
+const initialState = {
+  count: 0,
+  emotions: Emotions,
+  message: 'apple-untouched'
+};
+
+function counter(state = initialState, action){
   const count = state.count;
 
   switch(action.type){
