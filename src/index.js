@@ -3,16 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { createStore, applyMiddleware } from 'redux'; // import applyMiddleware from redux
 // import thunk from 'redux-thunk';
-import allFuncs from './middleware';
+// import allFuncs from './middleware';
+import axios from 'axios';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
 import { Provider} from 'react-redux';
 import counter from './reducers';
 import App from './components/App';
 
 import registerServiceWorker from './registerServiceWorker';
 
-const middleware = applyMiddleware(allFuncs.logger, allFuncs.getApples); // create a middleware const that uses applyMiddleware
+const middleware = applyMiddleware(logger, thunk); // create a middleware const that uses applyMiddleware
 
 const store = createStore(counter, middleware); // add middleware as an argument to the store.
+
+store.dispatch((dispatch) =>{
+  dispatch({type:'start'});
+  axios.get('https://pixabay.com/api/?key=5207088-f6eeef2e4b8e5be697c01704f&q=apples&image_type=photo&pretty=true')
+        .then((response) => {
+          dispatch({type:'end'});
+          console.log(response.data);
+        })
+        .catch((err) => {
+          dispatch({type:'broken'})
+        })
+})
 
 ReactDOM.render(
 <Provider store={store}> 

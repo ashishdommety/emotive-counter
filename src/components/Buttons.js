@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { increment, decrement } from '../actions';
+import React from 'react';
 
 const Buttons = (props) => {
   return (
