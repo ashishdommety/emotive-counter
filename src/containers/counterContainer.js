@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Display from '../components/Display';
-import { poke } from '../actions/index'; 
+import { touch, reset } from '../actions/index'; 
 
 function mapStateToProps(state){
   return {
@@ -11,7 +11,8 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
   return{
-    pokeThing: () => dispatch(poke())
+    interact: () => dispatch(touch()),
+    reset: () => dispatch(reset())
   }
 }
 

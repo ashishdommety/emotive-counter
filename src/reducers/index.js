@@ -10,14 +10,10 @@ function counter(state = initialState, action){
   const count = state.count;
 
   switch(action.type){
-    case 'poke':
+    case 'touch':
       return { count: count + 1, emotions: Emotions };
-    case 'start':
-      return { count: count, emotions: Emotions };
-    case 'broken':
-      return { count: count, emotions: Emotions };
-    case 'end':
-      return { count: count, emotions: Emotions };
+    case 'reset':
+      return {count: 0, emotions: Emotions }
     default:
       return state;
   }

@@ -1,16 +1,8 @@
 // the function still must be exported as a const
-export const poke = function poke(){
-  return { type: 'poke' }
+export const touch = function touch(){
+  return { type: 'touch' }
 }
 
-export const start = function start(){
-  return { type: 'start' }
-}
-
-export const broken = function broken(){
-  return { type: 'broken' }
-}
-
-export const end = function end(){
-  return { type: 'end' }
+export const reset = function(){
+ return { type: 'reset' } 
 }
