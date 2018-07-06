@@ -1,5 +1,29 @@
 body {
-  margin: 0;
-  padding: 0;
+  text-align: center;
   font-family: sans-serif;
+}
+
+#display{
+  background-color: #F0544F;
+  padding: 20px;
+  color: white;
+}
+
+button{
+  background-color: #821717;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #821717;
+}
+button:hover{
+  cursor: pointer;
+  background-color: #F0544F;
+  border: 2px dashed #821717;
+  font-weight: bold;
+  /* color: #821717; */
+}
+button:focus{
+  outline: none;
 }

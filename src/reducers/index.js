@@ -3,8 +3,7 @@ import Emotions from '../data/Emotions';
 // intial state goes here
 const initialState = {
   count: 0,
-  emotions: Emotions,
-  message: 'apple-untouched'
+  emotions: Emotions
 };
 
 function counter(state = initialState, action){
@@ -12,13 +11,13 @@ function counter(state = initialState, action){
 
   switch(action.type){
     case 'poke':
-      return { count: count + 1, emotions: Emotions, message: 'apple-untouched' };
+      return { count: count + 1, emotions: Emotions };
     case 'start':
-      return { count: count, emotions: Emotions, message: 'apple touched' };
+      return { count: count, emotions: Emotions };
     case 'broken':
-      return { count: count, emotions: Emotions, message: 'error in ajax call' };
+      return { count: count, emotions: Emotions };
     case 'end':
-      return { count: count, emotions: Emotions, message: 'apple recieved' };
+      return { count: count, emotions: Emotions };
     default:
       return state;
   }

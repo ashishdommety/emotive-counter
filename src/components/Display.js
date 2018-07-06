@@ -4,7 +4,7 @@ import Numbers from './Numbers';
 
 const Display = (props) => {
     return(
-    <div>
+    <div id='display'>
       <Buttons poke={props.pokeThing}/>
       <Numbers count={props.value} emotions={props.feelings}/>
     </div>

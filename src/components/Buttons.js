@@ -5,7 +5,7 @@ const Buttons = (props) => {
     <div>
       <button
         onClick={props.poke}
-      >poke</button>
+      >Poke</button>
     </div>
   )
 }

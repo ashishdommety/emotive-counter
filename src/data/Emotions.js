@@ -10,7 +10,14 @@ const Emotions = [
   "Ugh.",
   "Look at yourself.",
   "I'm going to leave if you do that again",
-  "Bye."
+  "Bye.",
+  "",
+  "Yeah, you better be sorry.",
+  "Alright",
+  "I forgive you. We can be friends again.",
+  "Alright already, haha!",
+  "Don't. Do. It",
+  "OH, C'MON!"
 ];
 
 export default Emotions;
