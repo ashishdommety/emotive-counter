@@ -10,7 +10,7 @@ const Buttons = (props) => {
         </button> : 
         <button
         onClick={props.reset}>
-          Erase Memory
+          Reset
         </button>}
     </div>
   )
