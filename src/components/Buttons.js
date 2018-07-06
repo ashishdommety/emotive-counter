@@ -5,7 +5,7 @@ const Buttons = (props) => {
     <div>
       <button
         onClick={props.poke}
-      >Poke</button>
+      >{((props.count < 12) || (props.count > 16)) ? 'Poke' : 'Apologize'}</button>
     </div>
   )
 }
