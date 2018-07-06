@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Display from '../components/Display';
-import { touch, reset } from '../actions/index'; 
+import { touch, reset } from '../actionCreators/index'; 
 
 function mapStateToProps(state){
   return {
