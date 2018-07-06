@@ -5,9 +5,11 @@ body {
 }
 
 #display{
+  margin: 150px 150px;
   background-color: #F0544F;
   padding: 20px;
   color: white;
+  border-radius: 20px;
 }
 
 button{
@@ -23,7 +25,6 @@ button:hover{
   background-color: #F0544F;
   border: 2px dashed #821717;
   font-weight: bold;
-  /* color: #821717; */
 }
 button:focus{
   outline: none;
