@@ -3,7 +3,7 @@ A simple redux counter application that has feelings.
 
 ![App Demo](/readme-assets/emotive-counter.gif)
 
-## Goal:
+##Thought Process:
 
 ## Understanding the files 
 
