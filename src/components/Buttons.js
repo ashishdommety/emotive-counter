@@ -1,5 +1,6 @@
 import React from 'react';
 
+// The Buttons component contains the logic to render the buttons, and modify their text as needed.
 const Buttons = (props) => {
   return (
     <div>

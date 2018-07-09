@@ -1,6 +1,6 @@
 import Emotions from '../data/Emotions';
 
-// intial state goes here
+// the initial state
 const initialState = {
   count: 0,
   emotions: Emotions
@@ -11,6 +11,7 @@ function counter(state = initialState, action){
 
   switch(action.type){
     case 'touch':
+      // notice we return the complete state below
       return { count: count + 1, emotions: Emotions };
     case 'reset':
       return {count: 0, emotions: Emotions }

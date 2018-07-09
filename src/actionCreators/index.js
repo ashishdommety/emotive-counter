@@ -1,4 +1,4 @@
-// the function still must be exported as a const
+// Here, we export a function that returns a simple action. In this case, the action just contains the minimal 'type' property. 
 export const touch = function touch(){
   return { type: 'touch' }
 }
