@@ -1,1 +1,1 @@
-# A repo with redux projects
+# A repo with redux projects 🚀💻
