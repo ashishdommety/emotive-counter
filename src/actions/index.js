@@ -6,6 +6,6 @@ export const broken = function broken(){
   return { type: 'broken' }
 }
 
-export const end = function end(){
-  return { type: 'end' }
+export const end = function end(pics){
+  return { type: 'end', pictures: pics }
 }

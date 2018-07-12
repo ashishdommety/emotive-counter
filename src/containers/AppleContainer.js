@@ -1,10 +1,11 @@
 import { connect } from 'react-redux';
-import AsyncButton from '../components/AsyncButton';
+import Display from '../components/Display';
 import { getApples } from '../actions/asyncs'; 
 
 function mapStateToProps(state){
   return {
-    note: state.message
+    note: state.message,
+    pics: state.images
   }
 }
 
@@ -14,6 +15,6 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-const CounterContainer = connect(mapStateToProps, mapDispatchToProps)(AsyncButton);
+const CounterContainer = connect(mapStateToProps, mapDispatchToProps)(Display);
 
 export default CounterContainer;

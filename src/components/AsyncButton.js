@@ -5,7 +5,7 @@ const AsyncButton = (props) => {
     <div>
       <p>{props.note}</p>
       <button
-        onClick={props.fetchApples}
+        onClick={props.collectApples}
       >get apples</button>
     </div>
   )

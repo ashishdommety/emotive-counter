@@ -1,22 +1,20 @@
-import Emotions from '../data/Emotions';
 
 // intial state goes here
 const initialState = {
-  count: 0,
-  emotions: Emotions,
-  message: 'apple-untouched'
+  images: [],
+  message: ''
 };
 
 function counter(state = initialState, action){
-  const count = state.count;
+  let images = state.images;
 
   switch(action.type){
     case 'start':
-      return { count: count, emotions: Emotions, message: 'apple touched' };
+      return { images, message: 'recieving apples..' };
     case 'broken':
-      return { count: count, emotions: Emotions, message: 'error in ajax call' };
+      return { images, message: 'error in ajax call' };
     case 'end':
-      return { count: count, emotions: Emotions, message: 'apple recieved' };
+      return { images: action.pictures, message: 'apples recieved!' };
     default:
       return state;
   }
