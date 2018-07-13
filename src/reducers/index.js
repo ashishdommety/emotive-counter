@@ -2,7 +2,7 @@
 // intial state goes here
 const initialState = {
   images: [],
-  message: ''
+  message: 'Would you like some apples?'
 };
 
 function counter(state = initialState, action){

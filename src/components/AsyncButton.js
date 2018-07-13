@@ -1,4 +1,5 @@
 import React from 'react';
+import FontAwesome from 'react-fontawesome';
 
 const AsyncButton = (props) => {
   return (
@@ -6,7 +7,8 @@ const AsyncButton = (props) => {
       <p>{props.note}</p>
       <button
         onClick={props.collectApples}
-      >get apples</button>
+      >Get Apples <FontAwesome name='apple'/> 
+      </button>
     </div>
   )
 }

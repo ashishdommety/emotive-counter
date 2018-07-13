@@ -1,5 +1,16 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
+  text-align:center;
+  background-color: #03B5AA;
+}
+
+button{
+  border:none;
+  background-color: #023436;
+  padding: 20px 40px;
+  color:white;
+  border-radius: 10px;
+}
+button:hover{
+  cursor: pointer;
 }
